@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+
+<div class="container">
+    <div class="row text-center">
+        <h1>Dictionary</h1>
+    </div>
+    <div class="row">
+         <div class="col-12 text-center mt-4">
+            <form action="dict" method="get">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <input type="text" name="word" class="form-control" placeholder="Word" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="Submit" id="button-addon2">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
+
